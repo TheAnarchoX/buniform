@@ -24,50 +24,83 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:description" content="follow the rabbit" />
-    <meta property="og:image" content="https://buniform.sh/buniform_wordmark.png" /> <!-- Replace buniform.sh with the actual URL of the image -->
+    <meta
+      property="og:image"
+      content="https://buniform.sh/buniform_wordmark.png"
+    />
+    <!-- Replace buniform.sh with the actual URL of the image -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@buniform_sh" />
     <meta name="twitter:title" content="buniform" />
     <meta name="twitter:description" content="follow the rabbit" />
-    <meta name="twitter:image" content="https://buniform.sh/buniform_wordmark.png" /> <!-- Replace buniform.sh with the actual URL of the image -->
+    <meta
+      name="twitter:image"
+      content="https://buniform.sh/buniform_wordmark.png"
+    />
+    <!-- Replace buniform.sh with the actual URL of the image -->
     <meta name="theme-color" content="#000000" />
+    <style>
+      span#typed-text {
+        color: #fff;
+        font-size: 1em;
+        font-weight: 700;
+        font-family: "Righteous", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-top: 20vh;
+        min-height: 2px;
+      }
+
+      span#cursor {
+        color: #fff;
+        font-size: 1em;
+        font-weight: 700;
+        font-family: "Righteous", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-top: 20vh;
+        min-height: 2px;
+      }
+    </style>
     <style data-inline-fonts="">
       /* latin-ext */
       @font-face {
-      font-family: "Righteous";
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(https://img1.wsimg.com/gfonts/s/righteous/v17/1cXxaUPXBpj2rGoU7C9WhnGFq8Kk1doH.woff2)
-        format("woff2");
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
-        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-        U+A720-A7FF;
+        font-family: "Righteous";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://img1.wsimg.com/gfonts/s/righteous/v17/1cXxaUPXBpj2rGoU7C9WhnGFq8Kk1doH.woff2)
+          format("woff2");
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
       }
       /* latin */
       @font-face {
-      font-family: "Righteous";
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(https://img1.wsimg.com/gfonts/s/righteous/v17/1cXxaUPXBpj2rGoU7C9WiHGFq8Kk1Q.woff2)
-        format("woff2");
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: "Righteous";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://img1.wsimg.com/gfonts/s/righteous/v17/1cXxaUPXBpj2rGoU7C9WiHGFq8Kk1Q.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
 
       /* vietnamese */
       @font-face {
-      font-family: "Josefin Sans";
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(https://img1.wsimg.com/gfonts/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUAnx4Vn8siqM7.woff2)
-        format("woff2");
-      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
-        U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://img1.wsimg.com/gfonts/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUAnx4Vn8siqM7.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
       }
       /* latin-ext */
       @font-face {
@@ -88,10 +121,10 @@
         font-weight: 400;
         font-display: swap;
         src: url(https://img1.wsimg.com/gfonts/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2)
-        format("woff2");
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
       /* vietnamese */
       @font-face {
@@ -112,10 +145,10 @@
         font-weight: 600;
         font-display: swap;
         src: url(https://img1.wsimg.com/gfonts/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUA3x4Vn8siqM7.woff2)
-        format("woff2");
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
-        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-        U+A720-A7FF;
+          format("woff2");
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
       }
       /* latin */
       @font-face {
@@ -138,8 +171,8 @@
         src: url(https://img1.wsimg.com/gfonts/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUAnx4Vn8siqM7.woff2)
           format("woff2");
         unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
-        U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
       }
       /* latin-ext */
       @font-face {
@@ -162,8 +195,8 @@
         src: url(https://img1.wsimg.com/gfonts/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2)
           format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
     <style>
@@ -212,7 +245,7 @@
         height: 0;
       }
       .x-el-template {
-      display: none;
+        display: none;
       }
       .x-el-a {
         background-color: transparent;
@@ -234,10 +267,10 @@
       }
       .x-el-mark {
         background: #ff0;
-      color: #000;
+        color: #000;
       }
       .x-el-small {
-      font-size: 80%;
+        font-size: 80%;
       }
       .x-el-sub,
       .x-el-sup {
@@ -260,7 +293,7 @@
         overflow: hidden;
       }
       .x-el-figure {
-      margin: 0;
+        margin: 0;
       }
       .x-el-hr {
         box-sizing: content-box;
@@ -282,11 +315,11 @@
       .x-el-select,
       .x-el-textarea {
         color: inherit;
-      font: inherit;
-      margin: 0;
+        font: inherit;
+        margin: 0;
       }
       .x-el-button {
-      overflow: visible;
+        overflow: visible;
       }
       .x-el-button,
       .x-el-select {
@@ -297,6 +330,7 @@
       .x-el-input[type="reset"],
       .x-el-input[type="submit"] {
         -webkit-appearance: button;
+        appearance: button;
         cursor: pointer;
       }
       .x-el-button[disabled],
@@ -306,10 +340,10 @@
       .x-el-button::-moz-focus-inner,
       .x-el-input::-moz-focus-inner {
         border: 0;
-      padding: 0;
+        padding: 0;
       }
       .x-el-input {
-      line-height: normal;
+        line-height: normal;
       }
       .x-el-input[type="checkbox"],
       .x-el-input[type="radio"] {
@@ -322,6 +356,7 @@
       }
       .x-el-input[type="search"] {
         -webkit-appearance: textfield;
+        appearance: textfield;
         box-sizing: content-box;
       }
       .x-el-input[type="search"]::-webkit-search-cancel-button,
@@ -332,9 +367,9 @@
         border: 0;
       }
       .x-el-fieldset {
-      border: 1px solid silver;
-      margin: 0 2px;
-      padding: 0.35em 0.625em 0.75em;
+        border: 1px solid silver;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
       }
       .x-el-legend {
         border: 0;
@@ -347,18 +382,18 @@
         font-weight: 700;
       }
       .x-el-table {
-      border-collapse: collapse;
-      border-spacing: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
       }
       .x-el-td,
       .x-el-th {
-      padding: 0;
+        padding: 0;
       }
       .x {
         -webkit-font-smoothing: antialiased;
       }
       .x-el-hr {
-      border: 0;
+        border: 0;
       }
       .x-el-fieldset,
       .x-el-input,
@@ -371,65 +406,65 @@
       .x-el-input[type="email"],
       .x-el-input[type="text"],
       .x-el-textarea {
-      width: 100%;
+        width: 100%;
       }
       .x-el-label {
-      vertical-align: middle;
+        vertical-align: middle;
       }
       .x-el-input {
-      border-style: none;
-      padding: 0.5em;
-      vertical-align: middle;
+        border-style: none;
+        padding: 0.5em;
+        vertical-align: middle;
       }
       .x-el-select:not([multiple]) {
-      vertical-align: middle;
+        vertical-align: middle;
       }
       .x-el-textarea {
-      line-height: 1.75;
-      padding: 0.5em;
+        line-height: 1.75;
+        padding: 0.5em;
       }
       .x-el.d-none {
-      display: none !important;
+        display: none !important;
       }
       .sideline-footer {
-      margin-top: auto;
+        margin-top: auto;
       }
       .disable-scroll {
-      touch-action: none;
-      overflow: hidden;
+        touch-action: none;
+        overflow: hidden;
         position: fixed;
         max-width: 100vw;
       }
       @-webkit-keyframes loaderscale {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      45% {
-        transform: scale(0.1);
-        opacity: 0.7;
-      }
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        45% {
+          transform: scale(0.1);
+          opacity: 0.7;
+        }
         80% {
           transform: scale(1);
           opacity: 1;
         }
       }
       @keyframes loaderscale {
-      0% {
-        transform: scale(1);
+        0% {
+          transform: scale(1);
           opacity: 1;
         }
         45% {
           transform: scale(0.1);
           opacity: 0.7;
-      }
-      80% {
-        transform: scale(1);
+        }
+        80% {
+          transform: scale(1);
           opacity: 1;
         }
       }
       .x-loader svg {
-      display: inline-block;
+        display: inline-block;
       }
       .x-loader svg:first-child {
         -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.24s
@@ -437,34 +472,34 @@
         animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.24s infinite;
       }
       .x-loader svg:nth-child(2) {
-      -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.12s
-        infinite;
-      animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.12s infinite;
+        -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.12s
+          infinite;
+        animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.12s infinite;
       }
       .x-loader svg:nth-child(3) {
         -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08)
-        0s infinite;
-      animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0s
-        infinite;
+          0s infinite;
+        animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0s
+          infinite;
       }
       .x-icon > svg {
         transition: transform 0.33s ease-in-out;
       }
       .x-icon > svg.rotate-90 {
-      transform: rotate(-90deg);
+        transform: rotate(-90deg);
       }
       .x-icon > svg.rotate90 {
-      transform: rotate(90deg);
+        transform: rotate(90deg);
       }
       .x-icon > svg.rotate-180 {
         transform: rotate(-180deg);
       }
       .x-icon > svg.rotate180 {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
       }
       .x-rt ol,
       .x-rt ul {
-      text-align: left;
+        text-align: left;
       }
       .x-rt p {
         margin: 0;
@@ -473,8 +508,8 @@
         display: inline-block;
       }
       @media only screen and (min-device-width: 1025px) {
-      :root select,
-      _::-webkit-full-page-media,
+        :root select,
+        _::-webkit-full-page-media,
         _:future {
           font-family: sans-serif !important;
         }
@@ -504,7 +539,483 @@ This license is copied below, and is also available with a FAQ at: http://script
 */
     </style>
     <style data-glamor="cxs-default-sheet">
-      .x .c1-1{letter-spacing:normal}.x .c1-2{text-transform:none}.x .c1-3{background-color:rgb(255, 255, 255)}.x .c1-4{width:100%}.x .c1-5 > div{position:relative}.x .c1-6 > div{overflow:hidden}.x .c1-7 > div{margin-top:auto}.x .c1-8 > div{margin-right:auto}.x .c1-9 > div{margin-bottom:auto}.x .c1-a > div{margin-left:auto}.x .c1-b{font-family:'Josefin Sans', Arial, sans-serif}.x .c1-c{font-size:16px}.x .c1-h{background-color:rgb(0, 0, 0)}.x .c1-i{padding-top:40px}.x .c1-j{padding-bottom:40px}.x .c1-k{overflow:hidden}.x .c1-l{padding:0px !important}.x .c1-o{display:block}.x .c1-q{display:flex}.x .c1-r{flex-direction:column}.x .c1-s{min-height:500px}.x .c1-t{justify-content:flex-start}.x .c1-v{flex-grow:1}.x .c1-w{display:none}.x .c1-x{align-items:flex-start}.x .c1-y{justify-content:center}.x .c1-z{margin-top:0px}.x .c1-10{margin-bottom:0px}.x .c1-11{padding-top:0px}.x .c1-15{margin-left:0px}.x .c1-16{margin-right:0px}.x .c1-17{padding-left:24px}.x .c1-18{padding-right:24px}.x .c1-19{max-width:100%}.x .c1-1j{margin-top:none}.x .c1-1p{margin-left:auto}.x .c1-1q{margin-right:auto}.x .c1-1r{padding-left:0px}.x .c1-1s{padding-right:0px}.x .c1-1t{position:relative}.x .c1-1u{text-align:left}.x .c1-1v{align-items:center}.x .c1-25 > :nth-child(n){margin-bottom:8px}.x .c1-26  > :last-child{margin-bottom:0 !important}.x .c1-27{padding-bottom:24px}.x .c1-2h{padding-left:0px}.x .c1-2i{padding-right:0px}.x .c1-2j{width:inherit}.x .c1-2k{padding-bottom:0px}.x .c1-2l{[object -object]:0px}.x .c1-2m{word-wrap:break-word}.x .c1-2n{overflow-wrap:break-word}.x .c1-2o{width:auto}.x .c1-2p{line-height:1.2}.x .c1-2q{letter-spacing:4px}.x .c1-2r{text-transform:uppercase}.x .c1-2s{white-space:pre-line}.x .c1-2t{font-size:39px}.x .c1-2u{border-bottom-width:0px}.x .c1-2v{border-bottom-style:solid}.x .c1-2w{border-color:rgba(226, 226, 226, 0.5)}.x .c1-2x{display:inline-block}.x .c1-2y{font-family:'Righteous', serif, system-ui}.x .c1-2z{color:rgb(226, 226, 226)}.x .c1-30{font-weight:400}.x .c1-3a{word-wrap:normal !important}.x .c1-3b{overflow-wrap:normal !important}.x .c1-3c{visibility:hidden}.x .c1-3d{position:absolute}.x .c1-3e{overflow:visible}.x .c1-3f{left:0px}.x .c1-3g{font-size:35px}.x .c1-3l{font-size:28px}.x .c1-3q{font-size:25px}.x .c1-3w{padding-top:56px}.x .c1-3x{padding-bottom:56px}.x .c1-3y{box-sizing:border-box}.x .c1-3z{flex-direction:row}.x .c1-40{flex-wrap:wrap}.x .c1-41{text-align:center}.x .c1-42{flex-grow:3}.x .c1-43{flex-shrink:1}.x .c1-44{flex-basis:100%}.x .c1-47{line-height:1.5}.x .c1-48{color:rgb(150, 150, 150)}.x .c1-49{font-size:14px}.x .c1-4f{letter-spacing:inherit}.x .c1-4g{text-transform:inherit}.x .c1-4h{font-size:inherit !important}.x .c1-4i{color:inherit}.x .c1-4j{font-weight:600}.x .c1-4k{line-height:inherit}.x .c1-4l{font-weight:inherit}.x .c1-4m{font-style:italic}.x .c1-4n{text-decoration:line-through}.x .c1-4o{text-decoration:underline}.x .c1-4p{padding-left:none}.x .c1-4q{padding-right:none}.x .c1-4r{padding-top:16px}.x .c1-4s{padding-bottom:16px}.x .c1-4t{row-gap:0px}.x .c1-4u{column-gap:0px}.x .c1-4v{text-decoration:none}.x .c1-4w{display:inline}.x .c1-4x{cursor:pointer}.x .c1-4y [data-typography]{color:inherit}.x .c1-4z{color:rgb(255, 255, 255)}.x .c1-50:hover{color:rgb(198, 198, 198)}.x .c1-51:active{color:rgb(255, 255, 255)}.x .c1-52{vertical-align:middle}.x .c1-53{padding-top:6px}.x .c1-54{padding-right:6px}.x .c1-55{padding-bottom:6px}.x .c1-56{padding-left:6px}.x .c1-57{margin-top:32px}.x .c1-58{list-style-type:none}.x .c1-5b{letter-spacing:0.063em}.x .c1-5c{padding-top:8px}.x .c1-5d{padding-bottom:8px}.x .c1-5e{padding-left:8px}.x .c1-5f{padding-right:8px}.x .c1-5g:hover{color:rgb(226, 226, 226)}.x .c1-5h:active{color:rgb(226, 226, 226)}.x .c1-5k{position:fixed}.x .c1-5l{right:0px}.x .c1-5m{z-index:10000}.x .c1-5n{height:auto}.x .c1-5o{background-color:rgb(17, 17, 17)}.x .c1-5p{border-radius:0px}.x .c1-5q{overflow-y:auto}.x .c1-5r{transition:all 1s ease-in}.x .c1-5s{box-shadow:0 2px 6px 0px rgba(0,0,0,0.3)}.x .c1-5t{contain:content}.x .c1-5u{bottom:-500px}.x .c1-5v{padding-top:24px}.x .c1-63{line-height:1.25}.x .c1-64{color:rgb(241, 241, 241)}.x .c1-65{font-size:22px}.x .c1-6a{max-height:300px}.x .c1-6b{color:rgb(158, 158, 158)}.x .c1-6d{justify-content:space-between}.x .c1-6e{transition:all 0.3s}.x .c1-6f{transition-property:background-color}.x .c1-6g{transition-duration:.3s}.x .c1-6h{transition-timing-function:ease-in-out}.x .c1-6i{margin-top:24px}.x .c1-6j{margin-bottom:4px}.x .c1-6k{word-break:break-word}.x .c1-6l{flex-basis:50%}.x .c1-6m{border-style:none}.x .c1-6n{padding-left:16px}.x .c1-6o{padding-right:16px}.x .c1-6p{padding-top:4px}.x .c1-6q{padding-bottom:4px}.x .c1-6r{min-height:40px}.x .c1-6s{color:rgb(48, 48, 48)}.x .c1-6t{text-shadow:none}.x .c1-6u:hover{background-color:rgb(255, 255, 255)}.x .c1-6y:nth-child(2){margin-left:24px}
+      .x .c1-1 {
+        letter-spacing: normal;
+      }
+      .x .c1-2 {
+        text-transform: none;
+      }
+      .x .c1-3 {
+        background-color: rgb(255, 255, 255);
+      }
+      .x .c1-4 {
+        width: 100%;
+      }
+      .x .c1-5 > div {
+        position: relative;
+      }
+      .x .c1-6 > div {
+        overflow: hidden;
+      }
+      .x .c1-7 > div {
+        margin-top: auto;
+      }
+      .x .c1-8 > div {
+        margin-right: auto;
+      }
+      .x .c1-9 > div {
+        margin-bottom: auto;
+      }
+      .x .c1-a > div {
+        margin-left: auto;
+      }
+      .x .c1-b {
+        font-family: "Josefin Sans", Arial, sans-serif;
+      }
+      .x .c1-c {
+        font-size: 16px;
+      }
+      .x .c1-h {
+        background-color: rgb(0, 0, 0);
+      }
+      .x .c1-i {
+        padding-top: 40px;
+      }
+      .x .c1-j {
+        padding-bottom: 40px;
+      }
+      .x .c1-k {
+        overflow: hidden;
+      }
+      .x .c1-l {
+        padding: 0px !important;
+      }
+      .x .c1-o {
+        display: block;
+      }
+      .x .c1-q {
+        display: flex;
+      }
+      .x .c1-r {
+        flex-direction: column;
+      }
+      .x .c1-s {
+        min-height: 500px;
+      }
+      .x .c1-t {
+        justify-content: flex-start;
+      }
+      .x .c1-v {
+        flex-grow: 1;
+      }
+      .x .c1-w {
+        display: none;
+      }
+      .x .c1-x {
+        align-items: flex-start;
+      }
+      .x .c1-y {
+        justify-content: center;
+      }
+      .x .c1-z {
+        margin-top: 0px;
+      }
+      .x .c1-10 {
+        margin-bottom: 0px;
+      }
+      .x .c1-11 {
+        padding-top: 0px;
+      }
+      .x .c1-15 {
+        margin-left: 0px;
+      }
+      .x .c1-16 {
+        margin-right: 0px;
+      }
+      .x .c1-17 {
+        padding-left: 24px;
+      }
+      .x .c1-18 {
+        padding-right: 24px;
+      }
+      .x .c1-19 {
+        max-width: 100%;
+      }
+      .x .c1-1j {
+        margin-top: none;
+      }
+      .x .c1-1p {
+        margin-left: auto;
+      }
+      .x .c1-1q {
+        margin-right: auto;
+      }
+      .x .c1-1r {
+        padding-left: 0px;
+      }
+      .x .c1-1s {
+        padding-right: 0px;
+      }
+      .x .c1-1t {
+        position: relative;
+      }
+      .x .c1-1u {
+        text-align: left;
+      }
+      .x .c1-1v {
+        align-items: center;
+      }
+      .x .c1-25 > :nth-child(n) {
+        margin-bottom: 8px;
+      }
+      .x .c1-26 > :last-child {
+        margin-bottom: 0 !important;
+      }
+      .x .c1-27 {
+        padding-bottom: 24px;
+      }
+      .x .c1-2h {
+        padding-left: 0px;
+      }
+      .x .c1-2i {
+        padding-right: 0px;
+      }
+      .x .c1-2j {
+        width: inherit;
+      }
+      .x .c1-2k {
+        padding-bottom: 0px;
+      }
+      .x .c1-2l {
+        padding-bottom: 0px;
+      }
+      .x .c1-2m {
+        word-wrap: break-word;
+      }
+      .x .c1-2n {
+        overflow-wrap: break-word;
+      }
+      .x .c1-2o {
+        width: auto;
+      }
+      .x .c1-2p {
+        line-height: 1.2;
+      }
+      .x .c1-2q {
+        letter-spacing: 4px;
+      }
+      .x .c1-2r {
+        text-transform: uppercase;
+      }
+      .x .c1-2s {
+        white-space: pre-line;
+      }
+      .x .c1-2t {
+        font-size: 39px;
+      }
+      .x .c1-2u {
+        border-bottom-width: 0px;
+      }
+      .x .c1-2v {
+        border-bottom-style: solid;
+      }
+      .x .c1-2w {
+        border-color: rgba(226, 226, 226, 0.5);
+      }
+      .x .c1-2x {
+        display: inline-block;
+      }
+      .x .c1-2y {
+        font-family: "Righteous", serif, system-ui;
+      }
+      .x .c1-2z {
+        color: rgb(226, 226, 226);
+      }
+      .x .c1-30 {
+        font-weight: 400;
+      }
+      .x .c1-3a {
+        word-wrap: normal !important;
+      }
+      .x .c1-3b {
+        overflow-wrap: normal !important;
+      }
+      .x .c1-3c {
+        visibility: hidden;
+      }
+      .x .c1-3d {
+        position: absolute;
+      }
+      .x .c1-3e {
+        overflow: visible;
+      }
+      .x .c1-3f {
+        left: 0px;
+      }
+      .x .c1-3g {
+        font-size: 35px;
+      }
+      .x .c1-3l {
+        font-size: 28px;
+      }
+      .x .c1-3q {
+        font-size: 25px;
+      }
+      .x .c1-3w {
+        padding-top: 56px;
+      }
+      .x .c1-3x {
+        padding-bottom: 56px;
+      }
+      .x .c1-3y {
+        box-sizing: border-box;
+      }
+      .x .c1-3z {
+        flex-direction: row;
+      }
+      .x .c1-40 {
+        flex-wrap: wrap;
+      }
+      .x .c1-41 {
+        text-align: center;
+      }
+      .x .c1-42 {
+        flex-grow: 3;
+      }
+      .x .c1-43 {
+        flex-shrink: 1;
+      }
+      .x .c1-44 {
+        flex-basis: 100%;
+      }
+      .x .c1-47 {
+        line-height: 1.5;
+      }
+      .x .c1-48 {
+        color: rgb(150, 150, 150);
+      }
+      .x .c1-49 {
+        font-size: 14px;
+      }
+      .x .c1-4f {
+        letter-spacing: inherit;
+      }
+      .x .c1-4g {
+        text-transform: inherit;
+      }
+      .x .c1-4h {
+        font-size: inherit !important;
+      }
+      .x .c1-4i {
+        color: inherit;
+      }
+      .x .c1-4j {
+        font-weight: 600;
+      }
+      .x .c1-4k {
+        line-height: inherit;
+      }
+      .x .c1-4l {
+        font-weight: inherit;
+      }
+      .x .c1-4m {
+        font-style: italic;
+      }
+      .x .c1-4n {
+        text-decoration: line-through;
+      }
+      .x .c1-4o {
+        text-decoration: underline;
+      }
+      .x .c1-4p {
+        padding-left: none;
+      }
+      .x .c1-4q {
+        padding-right: none;
+      }
+      .x .c1-4r {
+        padding-top: 16px;
+      }
+      .x .c1-4s {
+        padding-bottom: 16px;
+      }
+      .x .c1-4t {
+        row-gap: 0px;
+      }
+      .x .c1-4u {
+        column-gap: 0px;
+      }
+      .x .c1-4v {
+        text-decoration: none;
+      }
+      .x .c1-4w {
+        display: inline;
+      }
+      .x .c1-4x {
+        cursor: pointer;
+      }
+      .x .c1-4y [data-typography] {
+        color: inherit;
+      }
+      .x .c1-4z {
+        color: rgb(255, 255, 255);
+      }
+      .x .c1-50:hover {
+        color: rgb(198, 198, 198);
+      }
+      .x .c1-51:active {
+        color: rgb(255, 255, 255);
+      }
+      .x .c1-52 {
+        vertical-align: middle;
+      }
+      .x .c1-53 {
+        padding-top: 6px;
+      }
+      .x .c1-54 {
+        padding-right: 6px;
+      }
+      .x .c1-55 {
+        padding-bottom: 6px;
+      }
+      .x .c1-56 {
+        padding-left: 6px;
+      }
+      .x .c1-57 {
+        margin-top: 32px;
+      }
+      .x .c1-58 {
+        list-style-type: none;
+      }
+      .x .c1-5b {
+        letter-spacing: 0.063em;
+      }
+      .x .c1-5c {
+        padding-top: 8px;
+      }
+      .x .c1-5d {
+        padding-bottom: 8px;
+      }
+      .x .c1-5e {
+        padding-left: 8px;
+      }
+      .x .c1-5f {
+        padding-right: 8px;
+      }
+      .x .c1-5g:hover {
+        color: rgb(226, 226, 226);
+      }
+      .x .c1-5h:active {
+        color: rgb(226, 226, 226);
+      }
+      .x .c1-5k {
+        position: fixed;
+      }
+      .x .c1-5l {
+        right: 0px;
+      }
+      .x .c1-5m {
+        z-index: 10000;
+      }
+      .x .c1-5n {
+        height: auto;
+      }
+      .x .c1-5o {
+        background-color: rgb(17, 17, 17);
+      }
+      .x .c1-5p {
+        border-radius: 0px;
+      }
+      .x .c1-5q {
+        overflow-y: auto;
+      }
+      .x .c1-5r {
+        transition: all 1s ease-in;
+      }
+      .x .c1-5s {
+        box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.3);
+      }
+      .x .c1-5t {
+        contain: content;
+      }
+      .x .c1-5u {
+        bottom: -500px;
+      }
+      .x .c1-5v {
+        padding-top: 24px;
+      }
+      .x .c1-63 {
+        line-height: 1.25;
+      }
+      .x .c1-64 {
+        color: rgb(241, 241, 241);
+      }
+      .x .c1-65 {
+        font-size: 22px;
+      }
+      .x .c1-6a {
+        max-height: 300px;
+      }
+      .x .c1-6b {
+        color: rgb(158, 158, 158);
+      }
+      .x .c1-6d {
+        justify-content: space-between;
+      }
+      .x .c1-6e {
+        transition: all 0.3s;
+      }
+      .x .c1-6f {
+        transition-property: background-color;
+      }
+      .x .c1-6g {
+        transition-duration: 0.3s;
+      }
+      .x .c1-6h {
+        transition-timing-function: ease-in-out;
+      }
+      .x .c1-6i {
+        margin-top: 24px;
+      }
+      .x .c1-6j {
+        margin-bottom: 4px;
+      }
+      .x .c1-6k {
+        word-break: break-word;
+      }
+      .x .c1-6l {
+        flex-basis: 50%;
+      }
+      .x .c1-6m {
+        border-style: none;
+      }
+      .x .c1-6n {
+        padding-left: 16px;
+      }
+      .x .c1-6o {
+        padding-right: 16px;
+      }
+      .x .c1-6p {
+        padding-top: 4px;
+      }
+      .x .c1-6q {
+        padding-bottom: 4px;
+      }
+      .x .c1-6r {
+        min-height: 40px;
+      }
+      .x .c1-6s {
+        color: rgb(48, 48, 48);
+      }
+      .x .c1-6t {
+        text-shadow: none;
+      }
+      .x .c1-6u:hover {
+        background-color: rgb(255, 255, 255);
+      }
+      .x .c1-6y:nth-child(2) {
+        margin-left: 24px;
+      }
     </style>
     <style data-glamor="cxs-xs-sheet">
       @media (max-width: 767px) {
@@ -561,7 +1072,7 @@ This license is copied below, and is also available with a FAQ at: http://script
         .x .c1-5i {
           padding-top: 4px;
         }
-      }      }
+      }
       @media (max-width: 767px) {
         .x .c1-5j {
           padding-bottom: 4px;
@@ -569,15 +1080,16 @@ This license is copied below, and is also available with a FAQ at: http://script
       }
     </style>
     <style data-glamor="cxs-sm-sheet">
-      @media (min-width: 768px) {      @media (min-width: 1536px) {
-        .x .c1-d {      .x .c1-3u {
-          font-size: 16px;        font-size: 32px;
+      @media (min-width: 768px) {
+        .x .c1-d .x .c1-3u {
+          font-size: 16px;
         }
       }
       @media (min-width: 768px) {
         .x .c1-1a {
-          width: 100%;      @media (min-width: 1536px) {
-        }   }
+          width: 100%;
+        }
+      }
       @media (min-width: 768px) {
         .x .c1-1o {
           flex-basis: auto;
@@ -972,12 +1484,13 @@ This license is copied below, and is also available with a FAQ at: http://script
     </style>
     <style>
       .gd-ad-flex-parent {
-                animation-name: opacity-bounce;
-                animation-duration: 800ms;
-                animation-delay: 400ms;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease;
-                opacity: 0;
+        animation-name: opacity-bounce;
+        animation-duration: 800ms;
+        animation-delay: 400ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+        opacity: 0;
+      }
     </style>
     <style>
       .page-inner {
@@ -985,139 +1498,6 @@ This license is copied below, and is also available with a FAQ at: http://script
         min-height: 100vh;
       }
     </style>
-    <script>
-      "use strict";
-
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/sw.js");
-        });
-      }
-    </script>
-    <style type="text/css" id="operaUserStyle">
-      img {
-        filter: -opera-shader(
-          url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(
-              0.5 calc(env(-opera-gx-accent-color-r) / 255)
-                calc(env(-opera-gx-accent-color-g) / 255)
-                calc(env(-opera-gx-accent-color-b) / 255)
-            )
-        );
-      }
-    </style>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-layout17-Theme-publish-Theme-185fa4a1.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-_rollupPluginBabelHelpers-1ddb43ea.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-boldOutline-e1892f15.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-defaultSocialIconPack-a2c518b6.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-imageToHeaderTreatments-e81a288a.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index-4e26cd6b.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index3-1c2062ef.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-legacyOverrides-42582241.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-loaders-fffeeba5.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-overlayTypes-4cc463a5.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Carousel-3d82957b.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/ColorSwatch-4196a0a9.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/DynamicFontScaler-6cccd626.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-dataAids-6a839d53.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index2-87bd33e6.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-navigationDrawer-27f5f1f5.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-searchFormLocations-c86f2a99.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_commonjsHelpers-67085353.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react_commonjs-external-a1351e34.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_rollupPluginBabelHelpers-8ce54c82.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/interopRequireDefault-c83974f7.js"
-    ></script>
-    <script
-      crossorigin="Anonymous"
-      src="https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/dynamicFontScaler-ecd443bf.js"
-    ></script>
-    <script>
-      "undefined" === typeof _trfq && (window._trfq = []);
-      _trfq.push([
-        "cmdLogEvent",
-        "impression",
-        "pandc.vnext.upgrades.freemium_ad",
-        [
-          ["source-website", "10a683ad-e294-4f35-95f1-a08a2fcd3547"],
-          ["kevel-experiment-cohort", "ineligible"],
-        ],
-      ]);
-      document
-        .querySelector("a.gd-ad-body")
-        .addEventListener("click", function () {
-          _trfq.push([
-            "cmdLogEvent",
-            "click",
-            "pandc.vnext.upgrades.freemium_ad",
-            [
-              ["source-website", "10a683ad-e294-4f35-95f1-a08a2fcd3547"],
-              ["kevel-experiment-cohort", "ineligible"],
-            ],
-          ]);
-        });
-    </script>
   </head>
   <body class="x x-fonts-righteous">
     <div
@@ -1202,7 +1582,9 @@ This license is copied below, and is also available with a FAQ at: http://script
                                       data-typography="HeadingAlpha"
                                       data-font-scaled="true"
                                       class="x-el x-el-h1 c1-2q c1-2r c1-2m c1-2n c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-2t c1-2u c1-2v c1-2w c1-2k c1-19 c1-2x c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-36 c1-37 c1-38 c1-39"
-                                    >follow the rabbit
+                                    >
+                                      <span id="typed-text"></span
+                                      ><span id="cursor">_</span><br />
                                     </h1>
                                     <span
                                       role="heading"
@@ -1291,42 +1673,10 @@ This license is copied below, and is also available with a FAQ at: http://script
                                       data-font-scaled="true"
                                       class="x-el x-el-h1 c1-2q c1-2r c1-2m c1-2n c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-2t c1-2u c1-2v c1-2w c1-2k c1-19 c1-2x c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-36 c1-37 c1-38 c1-39"
                                     >
-                                      follow the rabbit
+                                      <span class="typed-text"
+                                        >follow the rabbit</span
+                                      ><span class="cursor">_</span>
                                     </h1>
-                                    <span
-                                      role="heading"
-                                      aria-level="NaN"
-                                      data-ux="scaler"
-                                      data-size="xxxlarge"
-                                      data-scaler-id="scaler-tagline-container-11877"
-                                      aria-hidden="true"
-                                      data-typography="HeadingAlpha"
-                                      data-font-scaled="true"
-                                      class="x-el x-el-span c1-2q c1-2r c1-3a c1-3b c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-19 c1-w c1-2u c1-2v c1-2w c1-2k c1-3c c1-3d c1-2o c1-3e c1-3f c1-3g c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-3h c1-3i c1-3j c1-3k"
-                                      >follow the rabbit</span
-                                    ><span
-                                      role="heading"
-                                      aria-level="NaN"
-                                      data-ux="scaler"
-                                      data-size="xxlarge"
-                                      data-scaler-id="scaler-tagline-container-11877"
-                                      aria-hidden="true"
-                                      data-typography="HeadingAlpha"
-                                      data-font-scaled="true"
-                                      class="x-el x-el-span c1-2q c1-2r c1-3a c1-3b c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-19 c1-w c1-2u c1-2v c1-2w c1-2k c1-3c c1-3d c1-2o c1-3e c1-3f c1-3l c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-3m c1-3n c1-3o c1-3p"
-                                      >follow the rabbit</span
-                                    ><span
-                                      role="heading"
-                                      aria-level="NaN"
-                                      data-ux="scaler"
-                                      data-size="xlarge"
-                                      data-scaler-id="scaler-tagline-container-11877"
-                                      aria-hidden="true"
-                                      data-typography="HeadingAlpha"
-                                      data-font-scaled="true"
-                                      class="x-el x-el-span c1-2q c1-2r c1-3a c1-3b c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-19 c1-w c1-2u c1-2v c1-2w c1-2k c1-3c c1-3d c1-2o c1-3e c1-3f c1-3q c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-3r c1-3s c1-3t c1-3u"
-                                      >follow the rabbit</span
-                                    >
                                   </div>
                                 </div>
                               </div>
@@ -1407,13 +1757,13 @@ This license is copied below, and is also available with a FAQ at: http://script
                               class="x-el x-el-a c1-4f c1-4g c1-4v c1-2m c1-2n c1-4w c1-4x c1-4y c1-b c1-4z c1-c c1-4l c1-50 c1-51 c1-d c1-e c1-f c1-g"
                               data-tccl="ux2.FOOTER.footer2.Layout.Default.Link.Default.11879.click,click"
                               ><img
-                              src="twitter.svg"
-                              alt="Twitter Icon"
-                              width="40px"
-                              height="40px"
-                              data-ux="IconSocial"
-                              class="x-el x-el-img c1-1 c1-2 c1-2z c1-2x c1-52 c1-53 c1-54 c1-55 c1-56 c1-b c1-c c1-d c1-e c1-f c1-g"
-                              /></a>
+                                src="twitter.svg"
+                                alt="Twitter Icon"
+                                width="40px"
+                                height="40px"
+                                data-ux="IconSocial"
+                                class="x-el x-el-img c1-1 c1-2 c1-2z c1-2x c1-52 c1-53 c1-54 c1-55 c1-56 c1-b c1-c c1-d c1-e c1-f c1-g"
+                            /></a>
                             <!-- github -->
                             <a
                               rel="noopener"
@@ -1428,13 +1778,13 @@ This license is copied below, and is also available with a FAQ at: http://script
                               class="x-el x-el-a c1-4f c1-4g c1-4v c1-2m c1-2n c1-4w c1-4x c1-4y c1-b c1-4z c1-c c1-4l c1-50 c1-51 c1-d c1-e c1-f c1-g"
                               data-tccl="ux2.FOOTER.footer2.Layout.Default.Link.Default.11879.click,click"
                               ><img
-                              src="github.svg"
-                              alt="Github Icon"
-                              width="40px"
-                              height="40px"
-                              data-ux="IconSocial"
-                              class="x-el x-el-img c1-1 c1-2 c1-2z c1-2x c1-52 c1-53 c1-54 c1-55 c1-56 c1-b c1-c c1-d c1-e c1-f c1-g"
-                              /></a>
+                                src="github.svg"
+                                alt="Github Icon"
+                                width="40px"
+                                height="40px"
+                                data-ux="IconSocial"
+                                class="x-el x-el-img c1-1 c1-2 c1-2z c1-2x c1-52 c1-53 c1-54 c1-55 c1-56 c1-b c1-c c1-d c1-e c1-f c1-g"
+                            /></a>
                           </div>
                         </div>
                       </div>
@@ -1545,6 +1895,59 @@ This license is copied below, and is also available with a FAQ at: http://script
         </div>
       </div>
     </div>
+    <script>
+      // make the cursor blink
+      const cursor = document.getElementById("cursor");
+
+      setInterval(() => {
+        cursor.style.opacity = cursor.style.opacity === "0" ? "1" : "0";
+      }, 500);
+
+      // type in "follow the rabbit" or "down, down, down, we go" in the typed-text span
+      const typedTextSpan = document.getElementById("typed-text");
+
+      const textArray = ["follow the rabbit", "down, down, down, we go"];
+
+      const typingDelay = 100;
+
+      const erasingDelay = 100;
+
+      const newTextDelay = 500;
+
+      let textArrayIndex = 0;
+
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          typedTextSpan.textContent +=
+            textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          setTimeout(erase, newTextDelay + 3500);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          textArrayIndex++;
+          if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+          setTimeout(type, typingDelay + 3500);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(type, 1000);
+      });
+    </script>
     <script type="text/javascript">
       ("IntersectionObserver" in window &&
         "Intl" in window &&
