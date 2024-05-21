@@ -40,6 +40,112 @@
     <!-- Replace buniform.sh with the actual URL of the image -->
     <meta name="theme-color" content="#000000" />
     <style>
+      body {
+        background-color: black;
+
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+      }
+
+      body * {
+        box-sizing: border-box;
+      }
+
+      #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 40%;
+        height: 100vh;
+      }
+
+      #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 50px;
+        font-size: 1.5em;
+        min-height: 2px;
+        font-family: "Josefin Sans", sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        #footer {
+          padding: 20px;
+          font-size: 1.5em;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: "Josefin Sans", sans-serif;
+        }
+      }
+
+      #copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 2px;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      #social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 2px;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      #social-media img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .title {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: "Righteous", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        min-height: 2px;
+        border-left: 2px solid #858585;
+        min-width: 30%;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      transition: all 500ms ease-in-out;
+
+      }
+
+      @media (max-width: 768px) {
+        .title {
+          min-height: 30%;
+          margin-left: 20px;
+          font-size: 3.1em;
+          min-width: 100%;
+        }
+      }
+
       span#typed-text {
         color: #fff;
         font-size: 1em;
@@ -199,1311 +305,44 @@
           U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
-    <style>
-      .x {
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .x *,
-      .x :after,
-      .x :before {
-        box-sizing: inherit;
-      }
-      .x-el a[href^="mailto:"]:not(.x-el),
-      .x-el a[href^="tel:"]:not(.x-el) {
-        color: inherit;
-        font-size: inherit;
-        text-decoration: inherit;
-      }
-      .x-el-article,
-      .x-el-aside,
-      .x-el-details,
-      .x-el-figcaption,
-      .x-el-figure,
-      .x-el-footer,
-      .x-el-header,
-      .x-el-hgroup,
-      .x-el-main,
-      .x-el-menu,
-      .x-el-nav,
-      .x-el-section,
-      .x-el-summary {
-        display: block;
-      }
-      .x-el-audio,
-      .x-el-canvas,
-      .x-el-progress,
-      .x-el-video {
-        display: inline-block;
-        vertical-align: baseline;
-      }
-      .x-el-audio:not([controls]) {
-        display: none;
-        height: 0;
-      }
-      .x-el-template {
-        display: none;
-      }
-      .x-el-a {
-        background-color: transparent;
-        color: inherit;
-      }
-      .x-el-a:active,
-      .x-el-a:hover {
-        outline: 0;
-      }
-      .x-el-abbr[title] {
-        border-bottom: 1px dotted;
-      }
-      .x-el-b,
-      .x-el-strong {
-        font-weight: 700;
-      }
-      .x-el-dfn {
-        font-style: italic;
-      }
-      .x-el-mark {
-        background: #ff0;
-        color: #000;
-      }
-      .x-el-small {
-        font-size: 80%;
-      }
-      .x-el-sub,
-      .x-el-sup {
-        font-size: 75%;
-        line-height: 0;
-        position: relative;
-        vertical-align: baseline;
-      }
-      .x-el-sup {
-        top: -0.5em;
-      }
-      .x-el-sub {
-        bottom: -0.25em;
-      }
-      .x-el-img {
-        vertical-align: middle;
-        border: 0;
-      }
-      .x-el-svg:not(:root) {
-        overflow: hidden;
-      }
-      .x-el-figure {
-        margin: 0;
-      }
-      .x-el-hr {
-        box-sizing: content-box;
-        height: 0;
-      }
-      .x-el-pre {
-        overflow: auto;
-      }
-      .x-el-code,
-      .x-el-kbd,
-      .x-el-pre,
-      .x-el-samp {
-        font-family: monospace, monospace;
-        font-size: 1em;
-      }
-      .x-el-button,
-      .x-el-input,
-      .x-el-optgroup,
-      .x-el-select,
-      .x-el-textarea {
-        color: inherit;
-        font: inherit;
-        margin: 0;
-      }
-      .x-el-button {
-        overflow: visible;
-      }
-      .x-el-button,
-      .x-el-select {
-        text-transform: none;
-      }
-      .x-el-button,
-      .x-el-input[type="button"],
-      .x-el-input[type="reset"],
-      .x-el-input[type="submit"] {
-        -webkit-appearance: button;
-        appearance: button;
-        cursor: pointer;
-      }
-      .x-el-button[disabled],
-      .x-el-input[disabled] {
-        cursor: default;
-      }
-      .x-el-button::-moz-focus-inner,
-      .x-el-input::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-      }
-      .x-el-input {
-        line-height: normal;
-      }
-      .x-el-input[type="checkbox"],
-      .x-el-input[type="radio"] {
-        box-sizing: border-box;
-        padding: 0;
-      }
-      .x-el-input[type="number"]::-webkit-inner-spin-button,
-      .x-el-input[type="number"]::-webkit-outer-spin-button {
-        height: auto;
-      }
-      .x-el-input[type="search"] {
-        -webkit-appearance: textfield;
-        appearance: textfield;
-        box-sizing: content-box;
-      }
-      .x-el-input[type="search"]::-webkit-search-cancel-button,
-      .x-el-input[type="search"]::-webkit-search-decoration {
-        -webkit-appearance: none;
-      }
-      .x-el-textarea {
-        border: 0;
-      }
-      .x-el-fieldset {
-        border: 1px solid silver;
-        margin: 0 2px;
-        padding: 0.35em 0.625em 0.75em;
-      }
-      .x-el-legend {
-        border: 0;
-        padding: 0;
-      }
-      .x-el-textarea {
-        overflow: auto;
-      }
-      .x-el-optgroup {
-        font-weight: 700;
-      }
-      .x-el-table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-      .x-el-td,
-      .x-el-th {
-        padding: 0;
-      }
-      .x {
-        -webkit-font-smoothing: antialiased;
-      }
-      .x-el-hr {
-        border: 0;
-      }
-      .x-el-fieldset,
-      .x-el-input,
-      .x-el-select,
-      .x-el-textarea {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .x-el-fieldset,
-      .x-el-input[type="email"],
-      .x-el-input[type="text"],
-      .x-el-textarea {
-        width: 100%;
-      }
-      .x-el-label {
-        vertical-align: middle;
-      }
-      .x-el-input {
-        border-style: none;
-        padding: 0.5em;
-        vertical-align: middle;
-      }
-      .x-el-select:not([multiple]) {
-        vertical-align: middle;
-      }
-      .x-el-textarea {
-        line-height: 1.75;
-        padding: 0.5em;
-      }
-      .x-el.d-none {
-        display: none !important;
-      }
-      .sideline-footer {
-        margin-top: auto;
-      }
-      .disable-scroll {
-        touch-action: none;
-        overflow: hidden;
-        position: fixed;
-        max-width: 100vw;
-      }
-      @-webkit-keyframes loaderscale {
-        0% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        45% {
-          transform: scale(0.1);
-          opacity: 0.7;
-        }
-        80% {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-      @keyframes loaderscale {
-        0% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        45% {
-          transform: scale(0.1);
-          opacity: 0.7;
-        }
-        80% {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-      .x-loader svg {
-        display: inline-block;
-      }
-      .x-loader svg:first-child {
-        -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.24s
-          infinite;
-        animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.24s infinite;
-      }
-      .x-loader svg:nth-child(2) {
-        -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.12s
-          infinite;
-        animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) -0.12s infinite;
-      }
-      .x-loader svg:nth-child(3) {
-        -webkit-animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08)
-          0s infinite;
-        animation: loaderscale 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0s
-          infinite;
-      }
-      .x-icon > svg {
-        transition: transform 0.33s ease-in-out;
-      }
-      .x-icon > svg.rotate-90 {
-        transform: rotate(-90deg);
-      }
-      .x-icon > svg.rotate90 {
-        transform: rotate(90deg);
-      }
-      .x-icon > svg.rotate-180 {
-        transform: rotate(-180deg);
-      }
-      .x-icon > svg.rotate180 {
-        transform: rotate(180deg);
-      }
-      .x-rt ol,
-      .x-rt ul {
-        text-align: left;
-      }
-      .x-rt p {
-        margin: 0;
-      }
-      .mte-inline-block {
-        display: inline-block;
-      }
-      @media only screen and (min-device-width: 1025px) {
-        :root select,
-        _::-webkit-full-page-media,
-        _:future {
-          font-family: sans-serif !important;
-        }
-      }
-    </style>
-    <style>
-      /*
-  Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved Font Name "Righteous"
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
-
-—————————————————————————————-
-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
-—————————————————————————————-
-*/
-
-      /*
-  Copyright 2010 The Josefin Sans Project Authors (https://github.com/ThomasJockin/JosefinSansFont-master), with Reserved Font Name "Josefin Sans".
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
-
-  —————————————————————————————-
-  SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
-  —————————————————————————————-
-*/
-    </style>
-    <style data-glamor="cxs-default-sheet">
-      .x .c1-1 {
-        letter-spacing: normal;
-      }
-      .x .c1-2 {
-        text-transform: none;
-      }
-      .x .c1-3 {
-        background-color: rgb(255, 255, 255);
-      }
-      .x .c1-4 {
-        width: 100%;
-      }
-      .x .c1-5 > div {
-        position: relative;
-      }
-      .x .c1-6 > div {
-        overflow: hidden;
-      }
-      .x .c1-7 > div {
-        margin-top: auto;
-      }
-      .x .c1-8 > div {
-        margin-right: auto;
-      }
-      .x .c1-9 > div {
-        margin-bottom: auto;
-      }
-      .x .c1-a > div {
-        margin-left: auto;
-      }
-      .x .c1-b {
-        font-family: "Josefin Sans", Arial, sans-serif;
-      }
-      .x .c1-c {
-        font-size: 16px;
-      }
-      .x .c1-h {
-        background-color: rgb(0, 0, 0);
-      }
-      .x .c1-i {
-        padding-top: 40px;
-      }
-      .x .c1-j {
-        padding-bottom: 40px;
-      }
-      .x .c1-k {
-        overflow: hidden;
-      }
-      .x .c1-l {
-        padding: 0px !important;
-      }
-      .x .c1-o {
-        display: block;
-      }
-      .x .c1-q {
-        display: flex;
-      }
-      .x .c1-r {
-        flex-direction: column;
-      }
-      .x .c1-s {
-        min-height: 500px;
-      }
-      .x .c1-t {
-        justify-content: flex-start;
-      }
-      .x .c1-v {
-        flex-grow: 1;
-      }
-      .x .c1-w {
-        display: none;
-      }
-      .x .c1-x {
-        align-items: flex-start;
-      }
-      .x .c1-y {
-        justify-content: center;
-      }
-      .x .c1-z {
-        margin-top: 0px;
-      }
-      .x .c1-10 {
-        margin-bottom: 0px;
-      }
-      .x .c1-11 {
-        padding-top: 0px;
-      }
-      .x .c1-15 {
-        margin-left: 0px;
-      }
-      .x .c1-16 {
-        margin-right: 0px;
-      }
-      .x .c1-17 {
-        padding-left: 24px;
-      }
-      .x .c1-18 {
-        padding-right: 24px;
-      }
-      .x .c1-19 {
-        max-width: 100%;
-      }
-      .x .c1-1j {
-        margin-top: none;
-      }
-      .x .c1-1p {
-        margin-left: auto;
-      }
-      .x .c1-1q {
-        margin-right: auto;
-      }
-      .x .c1-1r {
-        padding-left: 0px;
-      }
-      .x .c1-1s {
-        padding-right: 0px;
-      }
-      .x .c1-1t {
-        position: relative;
-      }
-      .x .c1-1u {
-        text-align: left;
-      }
-      .x .c1-1v {
-        align-items: center;
-      }
-      .x .c1-25 > :nth-child(n) {
-        margin-bottom: 8px;
-      }
-      .x .c1-26 > :last-child {
-        margin-bottom: 0 !important;
-      }
-      .x .c1-27 {
-        padding-bottom: 24px;
-      }
-      .x .c1-2h {
-        padding-left: 0px;
-      }
-      .x .c1-2i {
-        padding-right: 0px;
-      }
-      .x .c1-2j {
-        width: inherit;
-      }
-      .x .c1-2k {
-        padding-bottom: 0px;
-      }
-      .x .c1-2l {
-        padding-bottom: 0px;
-      }
-      .x .c1-2m {
-        word-wrap: break-word;
-      }
-      .x .c1-2n {
-        overflow-wrap: break-word;
-      }
-      .x .c1-2o {
-        width: auto;
-      }
-      .x .c1-2p {
-        line-height: 1.2;
-      }
-      .x .c1-2q {
-        letter-spacing: 4px;
-      }
-      .x .c1-2r {
-        text-transform: uppercase;
-      }
-      .x .c1-2s {
-        white-space: pre-line;
-      }
-      .x .c1-2t {
-        font-size: 39px;
-      }
-      .x .c1-2u {
-        border-bottom-width: 0px;
-      }
-      .x .c1-2v {
-        border-bottom-style: solid;
-      }
-      .x .c1-2w {
-        border-color: rgba(226, 226, 226, 0.5);
-      }
-      .x .c1-2x {
-        display: inline-block;
-      }
-      .x .c1-2y {
-        font-family: "Righteous", serif, system-ui;
-      }
-      .x .c1-2z {
-        color: rgb(226, 226, 226);
-      }
-      .x .c1-30 {
-        font-weight: 400;
-      }
-      .x .c1-3a {
-        word-wrap: normal !important;
-      }
-      .x .c1-3b {
-        overflow-wrap: normal !important;
-      }
-      .x .c1-3c {
-        visibility: hidden;
-      }
-      .x .c1-3d {
-        position: absolute;
-      }
-      .x .c1-3e {
-        overflow: visible;
-      }
-      .x .c1-3f {
-        left: 0px;
-      }
-      .x .c1-3g {
-        font-size: 35px;
-      }
-      .x .c1-3l {
-        font-size: 28px;
-      }
-      .x .c1-3q {
-        font-size: 25px;
-      }
-      .x .c1-3w {
-        padding-top: 56px;
-      }
-      .x .c1-3x {
-        padding-bottom: 56px;
-      }
-      .x .c1-3y {
-        box-sizing: border-box;
-      }
-      .x .c1-3z {
-        flex-direction: row;
-      }
-      .x .c1-40 {
-        flex-wrap: wrap;
-      }
-      .x .c1-41 {
-        text-align: center;
-      }
-      .x .c1-42 {
-        flex-grow: 3;
-      }
-      .x .c1-43 {
-        flex-shrink: 1;
-      }
-      .x .c1-44 {
-        flex-basis: 100%;
-      }
-      .x .c1-47 {
-        line-height: 1.5;
-      }
-      .x .c1-48 {
-        color: rgb(150, 150, 150);
-      }
-      .x .c1-49 {
-        font-size: 14px;
-      }
-      .x .c1-4f {
-        letter-spacing: inherit;
-      }
-      .x .c1-4g {
-        text-transform: inherit;
-      }
-      .x .c1-4h {
-        font-size: inherit !important;
-      }
-      .x .c1-4i {
-        color: inherit;
-      }
-      .x .c1-4j {
-        font-weight: 600;
-      }
-      .x .c1-4k {
-        line-height: inherit;
-      }
-      .x .c1-4l {
-        font-weight: inherit;
-      }
-      .x .c1-4m {
-        font-style: italic;
-      }
-      .x .c1-4n {
-        text-decoration: line-through;
-      }
-      .x .c1-4o {
-        text-decoration: underline;
-      }
-      .x .c1-4p {
-        padding-left: none;
-      }
-      .x .c1-4q {
-        padding-right: none;
-      }
-      .x .c1-4r {
-        padding-top: 16px;
-      }
-      .x .c1-4s {
-        padding-bottom: 16px;
-      }
-      .x .c1-4t {
-        row-gap: 0px;
-      }
-      .x .c1-4u {
-        column-gap: 0px;
-      }
-      .x .c1-4v {
-        text-decoration: none;
-      }
-      .x .c1-4w {
-        display: inline;
-      }
-      .x .c1-4x {
-        cursor: pointer;
-      }
-      .x .c1-4y [data-typography] {
-        color: inherit;
-      }
-      .x .c1-4z {
-        color: rgb(255, 255, 255);
-      }
-      .x .c1-50:hover {
-        color: rgb(198, 198, 198);
-      }
-      .x .c1-51:active {
-        color: rgb(255, 255, 255);
-      }
-      .x .c1-52 {
-        vertical-align: middle;
-      }
-      .x .c1-53 {
-        padding-top: 6px;
-      }
-      .x .c1-54 {
-        padding-right: 6px;
-      }
-      .x .c1-55 {
-        padding-bottom: 6px;
-      }
-      .x .c1-56 {
-        padding-left: 6px;
-      }
-      .x .c1-57 {
-        margin-top: 32px;
-      }
-      .x .c1-58 {
-        list-style-type: none;
-      }
-      .x .c1-5b {
-        letter-spacing: 0.063em;
-      }
-      .x .c1-5c {
-        padding-top: 8px;
-      }
-      .x .c1-5d {
-        padding-bottom: 8px;
-      }
-      .x .c1-5e {
-        padding-left: 8px;
-      }
-      .x .c1-5f {
-        padding-right: 8px;
-      }
-      .x .c1-5g:hover {
-        color: rgb(226, 226, 226);
-      }
-      .x .c1-5h:active {
-        color: rgb(226, 226, 226);
-      }
-      .x .c1-5k {
-        position: fixed;
-      }
-      .x .c1-5l {
-        right: 0px;
-      }
-      .x .c1-5m {
-        z-index: 10000;
-      }
-      .x .c1-5n {
-        height: auto;
-      }
-      .x .c1-5o {
-        background-color: rgb(17, 17, 17);
-      }
-      .x .c1-5p {
-        border-radius: 0px;
-      }
-      .x .c1-5q {
-        overflow-y: auto;
-      }
-      .x .c1-5r {
-        transition: all 1s ease-in;
-      }
-      .x .c1-5s {
-        box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.3);
-      }
-      .x .c1-5t {
-        contain: content;
-      }
-      .x .c1-5u {
-        bottom: -500px;
-      }
-      .x .c1-5v {
-        padding-top: 24px;
-      }
-      .x .c1-63 {
-        line-height: 1.25;
-      }
-      .x .c1-64 {
-        color: rgb(241, 241, 241);
-      }
-      .x .c1-65 {
-        font-size: 22px;
-      }
-      .x .c1-6a {
-        max-height: 300px;
-      }
-      .x .c1-6b {
-        color: rgb(158, 158, 158);
-      }
-      .x .c1-6d {
-        justify-content: space-between;
-      }
-      .x .c1-6e {
-        transition: all 0.3s;
-      }
-      .x .c1-6f {
-        transition-property: background-color;
-      }
-      .x .c1-6g {
-        transition-duration: 0.3s;
-      }
-      .x .c1-6h {
-        transition-timing-function: ease-in-out;
-      }
-      .x .c1-6i {
-        margin-top: 24px;
-      }
-      .x .c1-6j {
-        margin-bottom: 4px;
-      }
-      .x .c1-6k {
-        word-break: break-word;
-      }
-      .x .c1-6l {
-        flex-basis: 50%;
-      }
-      .x .c1-6m {
-        border-style: none;
-      }
-      .x .c1-6n {
-        padding-left: 16px;
-      }
-      .x .c1-6o {
-        padding-right: 16px;
-      }
-      .x .c1-6p {
-        padding-top: 4px;
-      }
-      .x .c1-6q {
-        padding-bottom: 4px;
-      }
-      .x .c1-6r {
-        min-height: 40px;
-      }
-      .x .c1-6s {
-        color: rgb(48, 48, 48);
-      }
-      .x .c1-6t {
-        text-shadow: none;
-      }
-      .x .c1-6u:hover {
-        background-color: rgb(255, 255, 255);
-      }
-      .x .c1-6y:nth-child(2) {
-        margin-left: 24px;
-      }
-    </style>
-    <style data-glamor="cxs-md-sheet">
-        .x .c1-e {
-          font-size: 16px;
-        }
-        .x .c1-p {
-          display: block;
-        }
-        .x .c1-u {
-          min-height: 85vh;
-        }
-        .x .c1-12 {
-          margin-top: 0px;
-        }
-        .x .c1-13 {
-          margin-bottom: 0px;
-        }
-        .x .c1-14 {
-          display: flex;
-        }
-        .x .c1-1b {
-          width: 984px;
-        }
-        .x .c1-1c {
-          justify-content: flex-start;
-        }
-        .x .c1-1d {
-          margin-left: auto;
-        }
-        .x .c1-1e {
-          margin-right: auto;
-        }
-        .x .c1-1f {
-          max-width: 100%;
-        }
-        .x .c1-1g {
-          margin-top: 72px;
-        }
-        .x .c1-1z {
-          max-width: calc(100% * (5 / 6));
-        }
-        .x .c1-20 {
-          margin-left: 0px;
-        }
-        .x .c1-24 {
-          width: 100%;
-        }
-        .x .c1-37 {
-          font-size: 54px;
-        }
-        .x .c1-3i {
-          font-size: 42px;
-        }
-        .x .c1-3n {
-          font-size: 33px;
-        }
-        .x .c1-3s {
-          font-size: 26px;
-        }
-        .x .c1-3v {
-          display: none;
-        }
-        .x .c1-45 {
-          flex-basis: 0%;
-        }
-        .x .c1-46 {
-          max-width: none;
-        }
-        .x .c1-4b {
-          text-align: left;
-        }
-        .x .c1-4c {
-          font-size: 14px;
-        }
-        .x .c1-67 {
-          font-size: 22px;
-        }
-        .x .c1-6v:hover {
-          box-shadow: inset 0 0 0 2px;
-        }
-        .x .c1-6w:hover {
-          color: rgb(106, 106, 106);
-        }
-        .x .c1-6x:hover {
-          background-color: transparent;
-        }
-    </style>
-    <style>
-     @media only screen and (min-width: 1025px) {
-        #n-11872 {
-          min-height: 40vh;
-        }
-      }
-    </style>
-    <style>
-      @keyframes opacity-bounce {
-        0% {
-          opacity: 0;
-          transform: translateY(100%);
-        }
-        60% {
-          transform: translateY(-20%);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
-    <style>
-      .gd-ad-flex-parent {
-        animation-name: opacity-bounce;
-        animation-duration: 800ms;
-        animation-delay: 400ms;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease;
-        opacity: 0;
-      }
-    </style>
-    <style>
-      .page-inner {
-        background-color: rgb(0, 0, 0);
-        min-height: 100vh;
-      }
-    </style>
   </head>
-  <body class="x x-fonts-righteous">
-    <div
-      id="layout-10-a-683-ad-e-294-4-f-35-95-f-1-a-08-a-2-fcd-3547"
-      class="layout layout-layout layout-layout-layout-17 locale-en-GB lang-en"
-    >
-      <div
-        data-ux="Page"
-        id="page-11871"
-        class="x-el x-el-div x-el c1-1 c1-2 c1-3 c1-4 c1-5 c1-6 c1-7 c1-8 c1-9 c1-a c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"
-      >
-        <div
-          data-ux="Block"
-          class="x-el x-el-div page-inner c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"
-        >
-          <div
-            id="e98ec7db-7c3b-47d6-903b-ebc6db74a29d"
-            class="widget widget-header widget-header-header-9"
-          >
-            <div
-              data-ux="Header"
-              role="main"
-              data-aid="HEADER_WIDGET"
-              id="n-11872"
-              class="x-el x-el-div x-el x-el c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-h c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"
-            >
-              <div>
-                <section
-                  data-ux="Section"
-                  data-aid="HEADER_SECTION"
-                  class="x-el x-el-section c1-1 c1-2 c1-h c1-i c1-j c1-k c1-l c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g"
-                >
-                  <div
-                    data-ux="Block"
-                    class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-p c1-e c1-f c1-g"
-                  ></div>
-                  <div
-                    data-ux="Block"
-                    class="x-el x-el-div c1-1 c1-2 c1-q c1-r c1-s c1-t c1-b c1-c c1-d c1-u c1-e c1-f c1-g"
-                  >
-                    <div
-                      data-ux="Block"
-                      class="x-el x-el-div c1-1 c1-2 c1-4 c1-v c1-w c1-x c1-r c1-y c1-z c1-10 c1-11 c1-b c1-c c1-d c1-12 c1-13 c1-14 c1-e c1-f c1-g"
-                    >
-                      <div
-                        data-ux="Container"
-                        class="x-el x-el-div c1-1 c1-2 c1-15 c1-16 c1-17 c1-18 c1-19 c1-q c1-b c1-c c1-1a c1-d c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-e c1-1h c1-f c1-1i c1-g"
-                      >
-                        <div
-                          data-ux="Block"
-                          class="x-el x-el-div c1-1 c1-2 c1-4 c1-1j c1-q c1-b c1-c c1-1k c1-1l c1-1m c1-1n c1-1o c1-d c1-e c1-f c1-g"
-                        >
-                          <div
-                            data-ux="Container"
-                            class="x-el x-el-div c1-1 c1-2 c1-1p c1-1q c1-1r c1-1s c1-19 c1-1t c1-1u c1-4 c1-q c1-1v c1-b c1-c c1-1a c1-1l c1-1w c1-1m c1-1n c1-1o c1-1x c1-1y c1-d c1-1b c1-1z c1-20 c1-e c1-1h c1-f c1-1i c1-g"
-                          >
-                            <div
-                              data-ux="Block"
-                              class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-21 c1-22 c1-23 c1-d c1-24 c1-e c1-f c1-g"
-                            >
-                              <div
-                                data-ux="Hero"
-                                class="x-el x-el-div c1-1 c1-2 c1-1u c1-25 c1-26 c1-27 c1-b c1-c c1-28 c1-29 c1-2a c1-2b c1-2c c1-2d c1-2e c1-2f c1-2g c1-d c1-1f c1-e c1-f c1-g"
-                              >
-                                <div
-                                  data-ux="Container"
-                                  class="x-el x-el-div c1-1 c1-2 c1-15 c1-16 c1-2h c1-2i c1-19 c1-2j c1-11 c1-2k c1-z c1-10 c1-2l c1-b c1-c c1-1a c1-d c1-1b c1-e c1-1h c1-f c1-1i c1-g"
-                                >
-                                  <div
-                                    id="tagline-container-11875"
-                                    defaultfontsize="xxxlarge"
-                                    class="x-el x-el-div c1-1 c1-2 c1-2m c1-2n c1-o c1-1t c1-19 c1-2o c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
-                                  >
-                                    <h1
-                                      role="heading"
-                                      aria-level="1"
-                                      data-ux="Tagline"
-                                      maxlines="4"
-                                      data-aid="HEADER_TAGLINE_RENDERED"
-                                      id="dynamic-tagline-11876"
-                                      containerid="tagline-container-11875"
-                                      data-typography="HeadingAlpha"
-                                      data-font-scaled="true"
-                                      class="x-el x-el-h1 c1-2q c1-2r c1-2m c1-2n c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-2t c1-2u c1-2v c1-2w c1-2k c1-19 c1-2x c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-36 c1-37 c1-38 c1-39"
-                                    >
-                                      <span id="typed-text"></span
-                                      ><span id="cursor">_</span><br />
-                                    </h1>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      data-ux="Block"
-                      class="x-el x-el-div c1-1 c1-2 c1-4 c1-v c1-q c1-x c1-r c1-y c1-z c1-10 c1-11 c1-b c1-c c1-d c1-12 c1-13 c1-3v c1-e c1-f c1-g"
-                    >
-                      <div
-                        data-ux="Container"
-                        class="x-el x-el-div c1-1 c1-2 c1-15 c1-16 c1-17 c1-18 c1-19 c1-q c1-b c1-c c1-1a c1-d c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-e c1-1h c1-f c1-1i c1-g"
-                      >
-                        <div
-                          data-ux="Block"
-                          class="x-el x-el-div c1-1 c1-2 c1-4 c1-1j c1-q c1-b c1-c c1-1k c1-1l c1-1m c1-1n c1-1o c1-d c1-e c1-f c1-g"
-                        >
-                          <div
-                            data-ux="Container"
-                            class="x-el x-el-div c1-1 c1-2 c1-1p c1-1q c1-1r c1-1s c1-19 c1-1t c1-1u c1-4 c1-q c1-1v c1-b c1-c c1-1a c1-1l c1-1w c1-1m c1-1n c1-1o c1-1x c1-1y c1-d c1-1b c1-1z c1-20 c1-e c1-1h c1-f c1-1i c1-g"
-                          >
-                            <div
-                              data-ux="Block"
-                              class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-21 c1-22 c1-23 c1-d c1-24 c1-e c1-f c1-g"
-                            >
-                              <div
-                                data-ux="Hero"
-                                class="x-el x-el-div c1-1 c1-2 c1-1u c1-25 c1-26 c1-27 c1-b c1-c c1-28 c1-29 c1-2a c1-2b c1-2c c1-2d c1-2e c1-2f c1-2g c1-d c1-1f c1-e c1-f c1-g"
-                              >
-                                <div
-                                  data-ux="Container"
-                                  class="x-el x-el-div c1-1 c1-2 c1-15 c1-16 c1-2h c1-2i c1-19 c1-2j c1-11 c1-2k c1-z c1-10 c1-2l c1-b c1-c c1-1a c1-d c1-1b c1-e c1-1h c1-f c1-1i c1-g"
-                                >
-                                  <div
-                                    id="tagline-container-11877"
-                                    defaultfontsize="xxxlarge"
-                                    class="x-el x-el-div c1-1 c1-2 c1-2m c1-2n c1-o c1-1t c1-19 c1-2o c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
-                                  >
-                                    <h1
-                                      role="heading"
-                                      aria-level="1"
-                                      data-ux="Tagline"
-                                      maxlines="4"
-                                      data-aid="HEADER_TAGLINE_RENDERED"
-                                      id="dynamic-tagline-11878"
-                                      containerid="tagline-container-11877"
-                                      data-typography="HeadingAlpha"
-                                      data-font-scaled="true"
-                                      class="x-el x-el-h1 c1-2q c1-2r c1-2m c1-2n c1-2p c1-15 c1-16 c1-z c1-10 c1-2s c1-2t c1-2u c1-2v c1-2w c1-2k c1-19 c1-2x c1-2y c1-2z c1-30 c1-31 c1-32 c1-33 c1-34 c1-35 c1-2a c1-36 c1-37 c1-38 c1-39"
-                                    >
-                                      <span class="typed-text"
-                                        >follow the rabbit</span
-                                      ><span class="cursor">_</span>
-                                    </h1>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-          <div
-            id="affd95e6-ca2b-49bd-a1fb-f0b3f9026d03"
-            class="widget widget-footer widget-footer-footer-2"
-          >
-            <div
-              data-ux="Widget"
-              role="contentinfo"
-              id="affd95e6-ca2b-49bd-a1fb-f0b3f9026d03"
-              class="x-el x-el-div x-el c1-1 c1-2 c1-h c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"
-            >
-              <div>
-                <section
-                  data-ux="Section"
-                  class="x-el x-el-section c1-1 c1-2 c1-h c1-3w c1-3x c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g"
-                >
-                  <div
-                    data-ux="Container"
-                    class="x-el x-el-div c1-1 c1-2 c1-1p c1-1q c1-17 c1-18 c1-19 c1-b c1-c c1-1a c1-d c1-1b c1-e c1-1h c1-f c1-1i c1-g"
-                  >
-                    <div
-                      data-ux="Layout"
-                      class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"
-                    >
-                      <div
-                        data-ux="Grid"
-                        class="x-el x-el-div c1-1 c1-2 c1-q c1-3y c1-3z c1-40 c1-z c1-16 c1-10 c1-15 c1-1v c1-41 c1-b c1-c c1-d c1-e c1-f c1-g"
-                      >
-                        <div
-                          data-ux="GridCell"
-                          class="x-el x-el-div c1-1 c1-2 c1-3y c1-42 c1-43 c1-44 c1-19 c1-11 c1-2i c1-2k c1-2h c1-b c1-c c1-d c1-45 c1-46 c1-e c1-f c1-g"
-                        >
-                          <div
-                            data-ux="FooterDetails"
-                            data-aid="FOOTER_COPYRIGHT_RENDERED"
-                            data-typography="DetailsAlpha"
-                            class="x-el c1-1 c1-2 c1-2m c1-2n c1-47 c1-z c1-10 c1-b c1-48 c1-49 c1-30 c1-4a c1-4b c1-4c c1-4d c1-4e x-rt"
-                          >
-                            <p style="margin: 0">
-                              <span
-                                >Copyright © 2024 buniform - All Rights
-                                Reserved</span
-                              >
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          data-ux="GridCell"
-                          class="x-el x-el-div c1-1 c1-2 c1-3y c1-v c1-43 c1-44 c1-19 c1-11 c1-2i c1-2k c1-2h c1-y c1-b c1-c c1-d c1-45 c1-46 c1-e c1-f c1-g"
-                        >
-                          <div
-                            data-ux="Block"
-                            data-aid="FOOTER_SOCIAL_LINKS"
-                            class="x-el x-el-div c1-1 c1-2 c1-q c1-y c1-4p c1-4q c1-4r c1-4s c1-40 c1-4t c1-4u c1-b c1-c c1-d c1-e c1-f c1-g"
-                          >
-                            <a
-                              rel="noopener"
-                              role="link"
-                              aria-haspopup="true"
-                              data-ux="Link"
-                              target="_blank"
-                              data-aid="FOOTER_TWITTER_LINK"
-                              aria-label="Twitter Social Link"
-                              href="https://www.twitter.com/buniform_sh"
-                              data-typography="LinkAlpha"
-                              class="x-el x-el-a c1-4f c1-4g c1-4v c1-2m c1-2n c1-4w c1-4x c1-4y c1-b c1-4z c1-c c1-4l c1-50 c1-51 c1-d c1-e c1-f c1-g"
-                              data-tccl="ux2.FOOTER.footer2.Layout.Default.Link.Default.11879.click,click"
-                              ><img
-                                src="twitter.svg"
-                                alt="Twitter Icon"
-                                width="40px"
-                                height="40px"
-                                data-ux="IconSocial"
-                                class="x-el x-el-img c1-1 c1-2 c1-2z c1-2x c1-52 c1-53 c1-54 c1-55 c1-56 c1-b c1-c c1-d c1-e c1-f c1-g"
-                            /></a>
-                            <!-- github -->
-                            <a
-                              rel="noopener"
-                              role="link"
-                              aria-haspopup="true"
-                              data-ux="Link"
-                              target="_blank"
-                              data-aid="FOOTER_GITHUB_LINK"
-                              aria-label="Github Social Link"
-                              href="https://www.github.com/theanarchox/buniform"
-                              data-typography="LinkAlpha"
-                              class="x-el x-el-a c1-4f c1-4g c1-4v c1-2m c1-2n c1-4w c1-4x c1-4y c1-b c1-4z c1-c c1-4l c1-50 c1-51 c1-d c1-e c1-f c1-g"
-                              data-tccl="ux2.FOOTER.footer2.Layout.Default.Link.Default.11879.click,click"
-                              ><img
-                                src="github.svg"
-                                alt="Github Icon"
-                                width="40px"
-                                height="40px"
-                                data-ux="IconSocial"
-                                class="x-el x-el-img c1-1 c1-2 c1-2z c1-2x c1-52 c1-53 c1-54 c1-55 c1-56 c1-b c1-c c1-d c1-e c1-f c1-g"
-                            /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    data-ux="Container"
-                    class="x-el x-el-div c1-1 c1-2 c1-1p c1-1q c1-17 c1-18 c1-19 c1-41 c1-57 c1-b c1-c c1-1a c1-d c1-1b c1-e c1-1h c1-f c1-1i c1-g"
-                  >
-                    <ul
-                      data-ux="NavFooter"
-                      class="x-el x-el-ul c1-1 c1-2 c1-58 c1-11 c1-2i c1-2k c1-2h c1-z c1-16 c1-10 c1-15 c1-2l c1-b c1-c c1-59 c1-5a c1-d c1-e c1-f c1-g"
-                    >
-                      <li style="display: inline-block">
-                        <a
-                          rel=""
-                          role="link"
-                          aria-haspopup="false"
-                          data-ux="NavFooterLink"
-                          data-page="6d729e52-4ca4-4b30-9ac5-e3a5e5e8861c"
-                          target=""
-                          data-aid="FOOTER_PAGE_LINK_0_RENDERED"
-                          data-edit-interactive="true"
-                          href="/privacybeleid"
-                          data-typography="NavAlpha"
-                          class="x-el x-el-a c1-5b c1-2 c1-4v c1-2m c1-2n c1-2x c1-4x c1-5c c1-5d c1-5e c1-5f c1-b c1-2z c1-c c1-30 c1-5g c1-5h c1-5i c1-5j c1-d c1-e c1-f c1-g"
-                          data-tccl="ux2.FOOTER.footer2.Nav.Footer.Link.Default.11880.click,click"
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-          <div
-            id="5e2a48e2-5249-4ab0-a81d-0a4119cc48ab"
-            class="widget widget-popup widget-popup-popup-1"
-          ></div>
-          <div
-            id="767b9e19-6b42-4ffd-aaea-cc0dd0fe2dbe"
-            class="widget widget-messaging widget-messaging-messaging-1"
-          ></div>
-          <div
-            id="b49d4509-51e6-4dca-8d68-7b1109a98b41"
-            class="widget widget-cookie-banner widget-cookie-banner-cookie-1"
-          >
-            <div
-              data-ux="Group"
-              data-aid="FOOTER_COOKIE_BANNER_RENDERED"
-              id="b49d4509-51e6-4dca-8d68-7b1109a98b41-banner"
-              class="x-el x-el-div c1-1 c1-2 c1-5k c1-5l c1-5m c1-4 c1-5n c1-1u c1-5o c1-5p c1-5q c1-5r c1-5s c1-5t c1-5u c1-5v c1-18 c1-27 c1-17 c1-z c1-16 c1-10 c1-15 c1-2l c1-b c1-c c1-5w c1-5x c1-5y c1-5z c1-60 c1-61 c1-62 c1-d c1-e c1-f c1-g"
-            >
-              <h4
-                role="heading"
-                aria-level="4"
-                data-ux="Heading"
-                data-aid="FOOTER_COOKIE_TITLE_RENDERED"
-                data-typography="HeadingDelta"
-                class="x-el x-el-h4 c1-1 c1-2 c1-2m c1-2n c1-63 c1-15 c1-16 c1-z c1-10 c1-5d c1-b c1-64 c1-65 c1-30 c1-66 c1-67 c1-68 c1-69"
-              >
-                This website uses cookies.
-              </h4>
-              <div
-                data-ux="Text"
-                data-aid="FOOTER_COOKIE_MESSAGE_RENDERED"
-                data-typography="BodyAlpha"
-                class="x-el c1-1 c1-2 c1-2m c1-2n c1-47 c1-z c1-10 c1-6a c1-5q c1-b c1-6b c1-c c1-30 c1-6c c1-d c1-e c1-f c1-g x-rt"
-              >
-                <p style="margin: 0">
-                  <span
-                    >We use cookies to analyze website traffic and optimize your
-                    website experience. By accepting our use of cookies, your
-                    data will be aggregated with all other user data.</span
-                  >
-                </p>
-              </div>
-              <div
-                data-ux="Block"
-                class="x-el x-el-div c1-1 c1-2 c1-q c1-6d c1-b c1-c c1-d c1-e c1-f c1-g"
-              >
-                <a
-                  data-ux-btn="primary"
-                  customborderwidth="small"
-                  data-ux="ButtonPrimary"
-                  href=""
-                  data-aid="FOOTER_COOKIE_DECLINE_RENDERED"
-                  id="b49d4509-51e6-4dca-8d68-7b1109a98b41-decline"
-                  data-typography="ButtonAlpha"
-                  class="x-el x-el-a c1-5b c1-2 c1-6e c1-6f c1-6g c1-6h c1-q c1-r c1-y c1-4x c1-6i c1-6j c1-6k c1-6l c1-v c1-6m c1-1v c1-41 c1-4v c1-2n c1-2m c1-1t c1-19 c1-4 c1-6n c1-6o c1-6p c1-6q c1-6r c1-5p c1-6s c1-3 c1-b c1-4j c1-6t c1-49 c1-6u c1-6v c1-6w c1-6x c1-6y c1-6z c1-4a c1-4c c1-4d c1-4e"
-                  data-tccl="ux2.COOKIE_BANNER.cookie1.Group.Default.Button.Primary.11882.click,click"
-                  >Decline</a
-                ><a
-                  data-ux-btn="primary"
-                  customborderwidth="small"
-                  data-ux="ButtonPrimary"
-                  href=""
-                  data-aid="FOOTER_COOKIE_CLOSE_RENDERED"
-                  id="b49d4509-51e6-4dca-8d68-7b1109a98b41-accept"
-                  data-typography="ButtonAlpha"
-                  class="x-el x-el-a c1-5b c1-2 c1-6e c1-6f c1-6g c1-6h c1-q c1-r c1-y c1-4x c1-6i c1-6j c1-6k c1-6l c1-v c1-6m c1-1v c1-41 c1-4v c1-2n c1-2m c1-1t c1-19 c1-4 c1-6n c1-6o c1-6p c1-6q c1-6r c1-5p c1-6s c1-3 c1-b c1-4j c1-6t c1-49 c1-6u c1-6v c1-6w c1-6x c1-6y c1-6z c1-4a c1-4c c1-4d c1-4e"
-                  data-tccl="ux2.COOKIE_BANNER.cookie1.Group.Default.Button.Primary.11883.click,click"
-                  >Accept</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <body>
+    <div id="main">
+      <h1 class="title">
+        <span id="typed-text"></span>
+        <span id="cursor">_</span>
+      </h1>
     </div>
+    <div id="footer">
+      <!-- copyright -->
+      <div id="copyright">
+        <p style="color: #fff; font-size: 0.8em; text-align: center; margin: 0">
+          &copy; 2024 buniform
+        </p>
+      </div>
+      <!-- social media -->
+      <div id="social-media">
+        <!-- twitter icon -->
+        <a
+          href="https://twitter.com/buniform_sh"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #fff; text-decoration: none; margin: 0 0.5em"
+        >
+          <img src="twitter.svg" alt="Twitter" />
+        </a>
+
+        <!-- github icon -->
+        <a
+          href="https://github.com/theanarchox/buniform"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #fff; text-decoration: none; margin: 0 0.5em"
+        >
+          <img src="github.svg" alt="GitHub" />
+        </a>
+    </div>
+
     <script>
       // make the cursor blink
       const cursor = document.getElementById("cursor");
@@ -1555,39 +394,6 @@ This license is copied below, and is also available with a FAQ at: http://script
 
       document.addEventListener("DOMContentLoaded", function () {
         setTimeout(type, 200);
-      });
-    </script>
-    <script type="text/javascript">
-      ("IntersectionObserver" in window &&
-        "Intl" in window &&
-        "Locale" in window.Intl) ||
-        document.write(
-          `\x3Cscript src="https://img1.wsimg.com/poly/v3/polyfill.min.js?rum=0&unknown=polyfill&flags=gated&features=Intl.~locale.en-GB">\x3C/script>`
-        );
-    </script>
-    <script
-      src="//img1.wsimg.com/blobby/go/10a683ad-e294-4f35-95f1-a08a2fcd3547/gpub/3b16e53a5595fa01/script.js"
-      crossorigin=""
-    ></script>
-    <script
-      src="//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.38.3.js"
-      crossorigin=""
-    ></script>
-    <script
-      type="text/javascript"
-      src="//img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"
-    ></script>
-    <script
-      defer=""
-      src="//img1.wsimg.com/traffic-assets/js/tccl.min.js"
-      crossorigin=""
-    ></script>
-    <script>
-      Core.utils.onAllowCookieTracking(() => {
-        let e = window.location.search,
-          l = new URLSearchParams(e),
-          i = l.get("gclid");
-        i && localStorage.setItem("gclid", i);
       });
     </script>
   </body>
