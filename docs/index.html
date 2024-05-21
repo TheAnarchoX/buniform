@@ -71,8 +71,19 @@
       @media (max-width: 768px) {
         #main {
           min-width: 100%;
-          justify-content: space-between;
-          margin-top: 20vh;
+                }
+      }
+
+      .logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .logo {
+          width: 100px;
+          height: 100px;
         }
       }
 
@@ -316,6 +327,12 @@
   </head>
   <body>
     <div id="main">
+      <!-- image -->
+      <img
+        class="logo"
+        src="buniform.png"
+        alt="do not follow the rabbit"
+      />
       <h1 class="title">
         <span id="typed-text"></span>
         <span id="cursor">_</span>
